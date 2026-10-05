@@ -52,13 +52,15 @@ const About: React.FC = () => (
             Testing Approach
           </div>
           <p>
-            I believe effective software quality engineering balances rigorous manual exploratory testing with stable, maintainable automation. Rather than simply writing fragile scripts, I prioritise maintainability through the <strong>Page Object Model (POM)</strong>, resilient locator strategies, and isolated test execution.
+            I believe effective software quality engineering balances rigorous manual exploratory testing with stable, maintainable automation. Rather than simply writing fragile scripts, I prioritise maintainability through the <strong>Page Object Model (POM)</strong>, Cucumber BDD specifications, resilient locator strategies, and isolated test execution.
           </p>
           <p>
-            My experience at <strong>Axess Technology Pvt Ltd</strong> spans end-to-end quality assurance: analysing functional requirements, writing structured test plans, executing regression test suites, validating API contracts, and ensuring timely issue tracking in Agile sprints.
+            With hands-on experience across <strong>V-Accel AI Dynamic</strong> and <strong>Axess Technology</strong>, my work spans end-to-end quality assurance: automating web workflows with Selenium and Playwright, validating REST APIs with Postman, designing comprehensive test cases, and actively tracking defects in Jira through Agile sprint cycles.
           </p>
           <div className="about-badge-row">
+            <span className="badge">V-Accel AI Dynamic</span>
             <span className="badge">Axess Technology</span>
+            <span className="badge">B.E. Anna University</span>
             <span className="badge">STLC / SDLC</span>
             <span className="badge">Agile / Scrum</span>
           </div>

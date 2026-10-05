@@ -46,12 +46,6 @@ const App: React.FC = () => {
 
   return (
     <ThemeProvider>
-      {/* Notice banner */}
-      <div className="notice-bar">
-        <span className="notice-chip">Note</span>
-        Items marked <span className="ph" style={{ margin: '0 3px' }}>[add ...]</span> are placeholders — provide your details to fill them in.
-      </div>
-
       <Navbar />
 
       <main>

@@ -1,134 +1,197 @@
 // =============================================
-//  Central Data File – Edit your real details
-//  here and the entire site updates automatically
+//  Central Data File – Real details loaded directly
+//  from Revanth M's resume
 // =============================================
 
 export const PERSON = {
   name: 'Revanth M',
-  role: 'Automation Test Engineer',
-  tagline: 'Manual + Automation Testing',
+  role: 'Software QA Automation Engineer',
+  tagline: 'Manual + Automation Testing | Selenium · Playwright · API Testing',
   summary:
-    'Dedicated QA engineer delivering dependable test automation frameworks and thorough test coverage. Specialised in Selenium WebDriver, Playwright, API testing, and robust end-to-end regression suites.',
+    'Software QA Automation Engineer with 2-3 years of experience in manual and automation testing of web applications and APIs. Hands-on experience developing and executing automated test scripts using Selenium with Java, TestNG, Cucumber, and Playwright with TypeScript. Skilled in functional, regression, smoke, sanity, integration, and end-to-end testing.',
   email: 'revanthsrj004@gmail.com',
   // Phone stored as segments – prevents plain-text scraping
-  phoneParts: ['8600', '995863'],
-  location: '[add city]',         // ← Replace with your city e.g. "Bengaluru, India"
-  linkedin: '[add link]',         // ← Replace with your LinkedIn profile URL
-  github: '[add link]',           // ← Replace with your GitHub profile URL
-  experience: '2.7 Years',
-  company: 'Axess Technology Pvt Ltd',
+  phoneParts: ['9600', '995863'],
+  location: 'Chennai, India',
+  linkedin: 'https://linkedin.com/in/revanth-srj',
+  github: 'https://github.com/Revanthsrj',
+  experience: '2-3 Years',
+  company: 'V-Accel AI Dynamic Private Limited',
 };
+
+export const EDUCATION = {
+  degree: 'Bachelor of Engineering (B.E.) - Mechanical Engineering',
+  institution: 'The Kavery Engineering College, Anna University',
+  year: '2018',
+};
+
+export const CORE_STRENGTHS = [
+  'Manual & Automation Testing',
+  'Selenium (Java)',
+  'Playwright (TypeScript)',
+  'Cucumber BDD',
+  'TestNG',
+  'API Testing (Postman)',
+  'Jira Defect Tracking',
+];
 
 export const SKILLS = [
   {
     category: 'Automation Testing',
     icon: 'monitor',
     tags: [
-      'Selenium WebDriver (Java)',
-      'Playwright (JS/TS)',
-      'TestNG',
-      'JUnit',
-      'Cucumber / BDD',
-      'Page Object Model (POM)',
-      'Data-Driven Testing',
-      'Cross-Browser Testing',
+      { label: 'Selenium WebDriver', icon: 'selenium' },
+      { label: 'Playwright', icon: 'playwright' },
+      { label: 'TestNG', icon: 'testng' },
+      { label: 'Cucumber (BDD)', icon: 'cucumber' },
+      { label: 'Pytest', icon: 'pytest' },
+      { label: 'Page Object Model', icon: 'pom' },
+      { label: 'Data-Driven Testing', icon: 'data' },
+      { label: 'Cross-Browser Testing', icon: 'browser' },
     ],
   },
   {
     category: 'Languages',
     icon: 'code',
-    tags: ['Java', 'JavaScript', 'TypeScript'],
+    tags: [
+      { label: 'Java', icon: 'java' },
+      { label: 'TypeScript', icon: 'typescript' },
+      { label: 'JavaScript', icon: 'javascript' },
+      { label: 'Python', icon: 'python' },
+    ],
   },
   {
     category: 'API Testing',
     icon: 'rss',
     tags: [
-      'Postman',
-      'REST API Testing',
-      'Status Code Validation',
-      'Response Body Validation',
-      'REST Assured',
+      { label: 'Postman', icon: 'postman' },
+      { label: 'REST API Testing', icon: 'api' },
+      { label: 'Status Code Validation', icon: 'check' },
+      { label: 'Response Validation', icon: 'check' },
+      { label: 'Data Integrity Testing', icon: 'data' },
     ],
   },
   {
-    category: 'Manual Testing',
+    category: 'Testing Types',
     icon: 'file-text',
     tags: [
-      'Test Case Design',
-      'Test Plans',
-      'Regression Testing',
-      'Smoke & Sanity',
-      'Functional Testing',
-      'Exploratory Testing',
-      'UAT Testing',
-      'Defect Lifecycle',
-      'Bug Reporting',
+      { label: 'Manual Testing', icon: 'doc' },
+      { label: 'Functional Testing', icon: 'check' },
+      { label: 'Regression Testing', icon: 'refresh' },
+      { label: 'Smoke & Sanity', icon: 'fire' },
+      { label: 'Integration Testing', icon: 'cycle' },
+      { label: 'End-to-End (E2E)', icon: 'browser' },
+      { label: 'Retesting', icon: 'refresh' },
     ],
   },
   {
-    category: 'Tools & CI/CD',
+    category: 'Tools & Practices',
     icon: 'settings',
     tags: [
-      'Jira',
-      'Git / GitHub',
-      'Maven',
-      'Jenkins (CI/CD)',
-      'Allure Reports',
-      'Extent Reports',
-      'VS Code',
-      'IntelliJ IDEA',
+      { label: 'Jira', icon: 'jira' },
+      { label: 'Git / GitHub', icon: 'github' },
+      { label: 'Maven', icon: 'maven' },
+      { label: 'Test Case Design', icon: 'doc' },
+      { label: 'Defect Tracking', icon: 'bug' },
+      { label: 'Bug Reporting', icon: 'bug' },
+      { label: 'VS Code', icon: 'vscode' },
+      { label: 'IntelliJ IDEA', icon: 'intellij' },
     ],
   },
   {
-    category: 'QA Practices',
+    category: 'QA Management',
     icon: 'users',
-    tags: ['Agile / Scrum', 'SDLC & STLC', 'Requirement Analysis', 'Traceability Matrix (RTM)'],
+    tags: [
+      { label: 'Agile / Scrum', icon: 'agile' },
+      { label: 'SDLC & STLC', icon: 'cycle' },
+      { label: 'User Story Analysis', icon: 'doc' },
+      { label: 'Test Execution', icon: 'check' },
+    ],
   },
 ];
 
-export const EXPERIENCE = {
-  role: 'Automation Test Engineer',
-  company: 'Axess Technology Pvt Ltd',
-  duration: '2.7 Years',
-  bullets: [
-    {
-      strong: 'Developed and maintained automated test scripts',
-      text:
-        'using Selenium WebDriver with Java and TestNG, adhering to the Page Object Model (POM) pattern to maximise script reusability and reduce maintenance costs.',
-    },
-    {
-      strong: 'Executed comprehensive manual and functional testing',
-      text:
-        'across sprint cycles—including smoke, sanity, regression, and exploratory suites—to validate critical user journeys prior to production deployments.',
-    },
-    {
-      strong: 'Validated RESTful API endpoints',
-      text:
-        'using Postman and REST Assured, verifying HTTP status codes, JSON response schemas, headers, and parameterised test datasets.',
-    },
-    {
-      strong: 'Logged and monitored defects in Jira',
-      text:
-        'throughout the defect lifecycle, providing developers with reproducible steps, expected vs actual outcomes, console logs, and screenshots.',
-    },
-    {
-      strong: 'Collaborated actively in Agile/Scrum ceremonies',
-      text:
-        'including sprint planning, daily standups, backlog refinement, and retrospectives while generating test execution reports with Extent and Allure.',
-    },
-  ],
-  tags: ['Selenium WebDriver', 'Java', 'TestNG', 'Page Object Model', 'Postman', 'Jira', 'Maven', 'Extent Reports', 'Agile / Scrum'],
-};
+export interface ExperienceItem {
+  role: string;
+  company: string;
+  location: string;
+  duration: string;
+  bullets: { strong: string; text: string }[];
+  tags: string[];
+}
+
+export const EXPERIENCES: ExperienceItem[] = [
+  {
+    role: 'Software QA Automation Engineer',
+    company: 'V-Accel AI Dynamic Private Limited',
+    location: 'Chennai, India',
+    duration: 'June 2025 - Present',
+    bullets: [
+      {
+        strong: 'End-to-End LMS & HRMS Validation:',
+        text: 'Spearheaded functional, regression, UI, and integration testing for enterprise Learning Management (LMS) and People Accel web applications.',
+      },
+      {
+        strong: 'API Testing & Authentication:',
+        text: 'Validated RESTful APIs using Postman, evaluating endpoints, status codes, payload structures, authentication tokens, and backend data integrity.',
+      },
+      {
+        strong: 'Test Case & Scenario Design:',
+        text: 'Authored and executed comprehensive test plans, test cases, and test scenarios mapped to business requirements and user stories.',
+      },
+      {
+        strong: 'Defect Lifecycle in Jira:',
+        text: 'Logged, documented, and tracked defects in Jira with reproducible steps and screenshots, collaborating with developers for fast resolution.',
+      },
+      {
+        strong: 'Retesting & Stability Assurance:',
+        text: 'Conducted rigorous smoke, sanity, and regression testing cycles across sprint releases to validate defect fixes and prevent regressions.',
+      },
+    ],
+    tags: ['Postman', 'REST API Testing', 'Jira', 'Functional Testing', 'Regression Testing', 'Manual QA', 'Integration Testing'],
+  },
+  {
+    role: 'Junior Software Engineer',
+    company: 'Axess Technology Private Limited',
+    location: 'Chennai, India',
+    duration: 'March 2024 - June 2025',
+    bullets: [
+      {
+        strong: 'Selenium UI Automation:',
+        text: 'Engineered and executed automated UI test scripts using Selenium WebDriver with Java across core e-commerce workflows for Tractor Supply.',
+      },
+      {
+        strong: 'Cucumber BDD Framework:',
+        text: 'Developed and maintained automated feature scenarios using Cucumber (BDD) with Gherkin syntax for transparent business-readable test specifications.',
+      },
+      {
+        strong: 'Reusable Automation Architecture:',
+        text: 'Constructed modular, reusable test scripts following Page Object Model (POM) principles, streamlining test maintenance as UI updated.',
+      },
+      {
+        strong: 'Continuous Quality & Regression:',
+        text: 'Executed automated regression suites, analyzed execution logs, identified UI bugs, and verified fixes across sprint releases.',
+      },
+      {
+        strong: 'Cross-Functional QA Collaboration:',
+        text: 'Participated in sprint planning, defect triage, test execution, defect reporting, and retesting with development and product teams.',
+      },
+    ],
+    tags: ['Selenium WebDriver', 'Java', 'Cucumber BDD', 'TestNG', 'Maven', 'Git', 'Jira', 'Regression Testing'],
+  },
+];
+
+// Backward-compatible alias for existing imports
+export const EXPERIENCE = EXPERIENCES[0];
 
 export type ProjectCategory = 'ui' | 'api' | 'manual';
 
 export interface Project {
   id: number;
-  name: string;           // placeholder if not ready
-  domain: string;         // placeholder if not ready
+  name: string;
+  domain: string;
   type: string;
   category: ProjectCategory;
-  testedModules: string;  // placeholder if not ready
+  testedModules: string;
   bullets: { strong: string; text: string }[];
   stack: string[];
 }
@@ -136,110 +199,126 @@ export interface Project {
 export const PROJECTS: Project[] = [
   {
     id: 1,
-    name: '[add project name]',
-    domain: '[add domain e.g., Banking / E-Commerce]',
-    type: 'UI Automation & Regression',
-    category: 'ui',
-    testedModules: '[add modules or features, e.g., User Auth, Search, Checkout]',
+    name: 'Learning Management System (LMS)',
+    domain: 'EdTech / Enterprise Learning',
+    type: 'Manual QA & E2E Testing',
+    category: 'manual',
+    testedModules: 'User Management, Course Enrollment, Session Scheduling, Attendance Tracking, Assessments & Notifications',
     bullets: [
       {
-        strong: 'Architected modular test scripts',
-        text: 'using Selenium WebDriver (Java) with Page Object Model (POM) and TestNG assertions for clean, reusable code.',
+        strong: 'End-to-End Workflow Testing:',
+        text: 'Performed comprehensive manual testing of an enterprise LMS application involving role-based access control and multi-user sessions.',
       },
       {
-        strong: 'Authored automated test cases:',
-        text: 'created [add number] test scripts covering end-to-end user workflows.',
+        strong: 'Core Feature Validation:',
+        text: 'Tested critical modules including user onboarding, course enrollment workflows, session scheduling, attendance tracking, and assessments.',
       },
       {
-        strong: 'Saved regression time:',
-        text: 'reduced manual regression cycle by [add number]% across release cycles.',
+        strong: 'Cross-Module Integration:',
+        text: 'Executed functional, regression, UI, and integration testing across interconnected application modules to verify system stability.',
       },
       {
-        strong: 'Discovered and logged',
-        text: '[add number] critical and major defects in Jira before production releases.',
+        strong: 'Test Case Authoring:',
+        text: 'Authored and executed detailed test cases, test scenarios, and scripts strictly mapped to business requirements and user stories.',
+      },
+      {
+        strong: 'Defect Lifecycle in Jira:',
+        text: 'Identified, documented, and tracked defects in Jira, actively collaborating with developers and business teams for swift resolution.',
+      },
+      {
+        strong: 'Retesting & Fix Verification:',
+        text: 'Conducted systematic retesting and regression rounds on bug fixes to ensure complete defect resolution without side effects.',
       },
     ],
-    stack: ['Selenium WebDriver', 'Java', 'TestNG', 'Page Object Model', 'Maven', 'Extent Reports'],
+    stack: ['Manual Testing', 'Functional Testing', 'Regression Testing', 'Integration Testing', 'Jira', 'Test Case Design', 'STLC'],
   },
   {
     id: 2,
-    name: '[add project name]',
-    domain: '[add domain e.g., Fintech / Telecom]',
-    type: 'API Testing',
+    name: 'People Accel - Web Application',
+    domain: 'HRMS / Enterprise Workforce',
+    type: 'API & Functional Testing',
     category: 'api',
-    testedModules: '[add modules e.g., Customer Onboarding, Payment Processing API]',
+    testedModules: 'Authentication, Biometric Login/Logout, Attendance Tracking, Payroll Processing, Holiday Configurations',
     bullets: [
       {
-        strong: 'Validated REST API endpoints',
-        text: 'using Postman and REST Assured for status codes (200, 201, 400, 404, 500) and headers.',
+        strong: 'API Testing with Postman:',
+        text: 'Validated RESTful APIs with Postman, verifying HTTP status codes, request/response JSON schemas, authentication tokens, and data integrity.',
       },
       {
-        strong: 'Executed structured test suites:',
-        text: 'validated [add number] endpoints with parameterised JSON payloads.',
+        strong: 'Biometrics & Security Authentication:',
+        text: 'Performed thorough functional validation of login workflows, biometric login/logout mechanisms, and role-based permissions.',
       },
       {
-        strong: 'Identified and reported',
-        text: '[add number] backend response mismatches and schema contract breakages.',
+        strong: 'Payroll & Attendance Calculations:',
+        text: 'Verified business logic for employee attendance logs, overtime calculations, holiday rules, and automated payroll generation.',
       },
       {
-        strong: 'Accelerated bug detection:',
-        text: 'verified API stability prior to front-end integration testing.',
+        strong: 'HR Workflows Coverage:',
+        text: 'Validated end-to-end workflows for employee record management, leave requests/approvals, and holiday calendar configurations.',
+      },
+      {
+        strong: 'Release Readiness & Defect Resolution:',
+        text: 'Collaborated with cross-functional teams to identify root causes of defects and certify builds for production deployment.',
       },
     ],
-    stack: ['Postman', 'REST Assured', 'Java', 'JSON Schema Validation', 'TestNG'],
+    stack: ['Postman', 'REST API Testing', 'Status Code Validation', 'JSON Validation', 'Jira', 'Functional QA'],
   },
   {
     id: 3,
-    name: '[add project name]',
-    domain: '[add domain e.g., SaaS / Web Portal]',
-    type: 'UI Automation & Cross-Browser',
+    name: 'E-Commerce Website - Tractor Supply',
+    domain: 'E-Commerce / Retail',
+    type: 'Selenium UI Automation & BDD',
     category: 'ui',
-    testedModules: '[add features e.g., Dynamic Filters, User Dashboard, Form Submissions]',
+    testedModules: 'User Authentication, Product Search & Catalog, Cart & Checkout, Order Management, Payment Workflows',
     bullets: [
       {
-        strong: 'Constructed cross-browser automation suite',
-        text: 'with Playwright (TypeScript/JavaScript) covering Chromium, Firefox, and WebKit.',
+        strong: 'Selenium WebDriver Automation:',
+        text: 'Engineered automated UI regression scripts using Selenium WebDriver with Java to validate high-volume e-commerce customer journeys.',
       },
       {
-        strong: 'Leveraged Playwright auto-waiting',
-        text: 'to eliminate flaky tests and handle dynamic asynchronous UI state changes.',
+        strong: 'Cucumber BDD Implementation:',
+        text: 'Authored and maintained automated test scenarios using Cucumber BDD with Gherkin feature files for readable test specifications.',
       },
       {
-        strong: 'Automated test coverage:',
-        text: 'implemented [add number] end-to-end regression scenarios.',
+        strong: 'Page Object Model Architecture:',
+        text: 'Structured test suites with Page Object Model (POM) design pattern and Maven build tool, ensuring clean code reusability.',
       },
       {
-        strong: 'Generated rich execution reports',
-        text: 'with Allure Reports including embedded screenshots and network tracing on failure.',
+        strong: 'Regression & Defect Lifecycle:',
+        text: 'Identified, reported, and tracked UI defects in Jira; performed retesting and regression testing to safeguard release quality.',
+      },
+      {
+        strong: 'Continuous Test Execution:',
+        text: 'Executed TestNG test suites, analyzed test failures, and updated automation scripts in response to frequent application updates.',
       },
     ],
-    stack: ['Playwright', 'TypeScript', 'JavaScript', 'Allure Reports', 'Cross-Browser Testing'],
+    stack: ['Selenium WebDriver', 'Java', 'Cucumber BDD', 'TestNG', 'Maven', 'Git', 'Jira', 'POM'],
   },
   {
     id: 4,
-    name: '[add project name]',
-    domain: '[add domain e.g., Healthcare / Enterprise]',
-    type: 'Manual & UAT QA',
-    category: 'manual',
-    testedModules: '[add modules e.g., Role-Based Access Control, Data Exports, Audit Logs]',
+    name: 'Playwright Modern E2E Test Suite',
+    domain: 'Modern Web Applications / SaaS',
+    type: 'Playwright & TypeScript E2E',
+    category: 'ui',
+    testedModules: 'Dynamic Web Forms, Asynchronous Components, Interactive Dashboards, Cross-Browser Compatibility',
     bullets: [
       {
-        strong: 'Designed detailed test plans and test cases',
-        text: 'from business requirements, boundary conditions, and user acceptance criteria.',
+        strong: 'Playwright Test Automation:',
+        text: 'Developed robust end-to-end automated test suites using Playwright with TypeScript for modern reactive web interfaces.',
       },
       {
-        strong: 'Maintained Traceability Matrix (RTM)',
-        text: 'to ensure 100% test coverage across all functional requirements.',
+        strong: 'Cross-Browser Parallel Execution:',
+        text: 'Configured automated test runs across Chromium, Firefox, and WebKit rendering engines to guarantee cross-browser consistency.',
       },
       {
-        strong: 'Authored [add number] manual test cases',
-        text: 'and executed smoke, functional, and UAT cycles.',
+        strong: 'Auto-Wait & Resilient Selectors:',
+        text: 'Leveraged built-in auto-waiting mechanisms and user-facing locator strategies to eliminate test flakiness on dynamic async content.',
       },
       {
-        strong: 'Facilitated defect triage meetings',
-        text: 'with developers and product managers to resolve [add number] bugs before release.',
+        strong: 'Trace & Failure Debugging:',
+        text: 'Utilized Playwright Trace Viewer, video recordings, and console logs to pinpoint failure causes and verify bug fixes rapidly.',
       },
     ],
-    stack: ['Test Case Design', 'Jira', 'STLC / SDLC', 'RTM', 'UAT Testing', 'Defect Lifecycle'],
+    stack: ['Playwright', 'TypeScript', 'Cross-Browser Testing', 'E2E Automation', 'TestNG / Pytest Concepts'],
   },
 ];

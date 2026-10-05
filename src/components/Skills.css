@@ -33,6 +33,28 @@
   color: var(--text-primary);
 }
 
+/* ── Icon-chip tags ─────────────────────────────────────────── */
+.tag--icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.38rem;
+  padding: 0.32rem 0.7rem 0.32rem 0.5rem;
+}
+
+.tag-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent);
+  flex-shrink: 0;
+  opacity: 0.9;
+  transition: opacity var(--transition);
+}
+
+.tag--icon:hover .tag-icon {
+  opacity: 1;
+}
+
 @media (max-width: 1024px) {
   .skills-grid { grid-template-columns: repeat(2, 1fr); }
 }

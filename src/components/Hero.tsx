@@ -58,9 +58,9 @@ const Hero: React.FC<HeroProps> = ({ onCall }) => {
         {/* Stats strip */}
         <div className="hero-stats">
           {[
-            { val: '2.7 Years', label: 'Industry Experience' },
-            { val: 'UI + API', label: 'Full Stack Testing' },
-            { val: 'POM & BDD', label: 'Clean Test Architecture' },
+            { val: PERSON.experience, label: 'Industry Experience' },
+            { val: 'UI + API', label: 'Manual & Automation QA' },
+            { val: 'Selenium & Playwright', label: 'E2E & BDD Frameworks' },
           ].map(s => (
             <div key={s.label} className="stat-item">
               <div className="stat-val">{s.val}</div>

@@ -10,12 +10,6 @@ const FILTERS: { label: string; value: Filter }[] = [
   { label: 'Manual QA', value: 'manual' },
 ];
 
-const ChevronIcon = () => (
-  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-    <polyline points="9 18 15 12 9 6" />
-  </svg>
-);
-
 const CheckIcon = () => (
   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
     <polyline points="20 6 9 17 4 12" />
@@ -34,8 +28,7 @@ const Projects: React.FC = () => {
           <div className="section-eyebrow">Demonstrated Work</div>
           <h2 className="section-title">Projects &amp; Test Suites</h2>
           <p className="section-desc">
-            Concrete automation frameworks and QA testing engagements. Placeholders{' '}
-            <span className="ph">[add ...]</span> are ready for your project-specific details.
+            Proven test automation frameworks, API testing suites, and manual QA engagements directly demonstrated from professional experience.
           </p>
         </div>
 
@@ -59,25 +52,16 @@ const Projects: React.FC = () => {
             <div key={project.id} className="card proj-card">
               {/* Meta bar */}
               <div className="proj-meta">
-                <span className="proj-domain-badge">
-                  {project.domain.startsWith('[') ? <span className="ph">{project.domain}</span> : project.domain}
-                </span>
+                <span className="proj-domain-badge">{project.domain}</span>
                 <span className="proj-type-label">{project.type}</span>
               </div>
 
               {/* Title */}
-              <h3 className="proj-title">
-                Project {project.id}:{' '}
-                {project.name.startsWith('[') ? <span className="ph">{project.name}</span> : project.name}
-              </h3>
+              <h3 className="proj-title">{project.name}</h3>
 
               {/* Tested modules */}
-              <div className="proj-tested-label">What I Tested</div>
-              <div className="proj-tested-value">
-                {project.testedModules.startsWith('[')
-                  ? <span className="ph">{project.testedModules}</span>
-                  : project.testedModules}
-              </div>
+              <div className="proj-tested-label">Modules &amp; Workflows Tested</div>
+              <div className="proj-tested-value">{project.testedModules}</div>
 
               {/* Bullets */}
               <div className="proj-bullets">
@@ -85,13 +69,7 @@ const Projects: React.FC = () => {
                   <div key={i} className="bullet-row">
                     <span className="bullet-icon"><CheckIcon /></span>
                     <p className="bullet-text proj-bullet-text">
-                      <strong>{b.strong}</strong>{' '}
-                      {/* Render inline placeholders */}
-                      {b.text.split(/(\[add [^\]]+\])/).map((part, j) =>
-                        part.startsWith('[add')
-                          ? <span key={j} className="ph">{part}</span>
-                          : part
-                      )}
+                      <strong>{b.strong}</strong> {b.text}
                     </p>
                   </div>
                 ))}
@@ -99,7 +77,7 @@ const Projects: React.FC = () => {
 
               {/* Stack */}
               <div className="proj-stack">
-                <div className="proj-stack-label">Tech Stack</div>
+                <div className="proj-stack-label">Tech Stack &amp; Tools</div>
                 <div className="tag-cloud">
                   {project.stack.map(t => <span key={t} className="tag">{t}</span>)}
                 </div>
